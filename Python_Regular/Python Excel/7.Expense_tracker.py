@@ -14,7 +14,7 @@ with open(samplecsv, "a",newline="") as file:
     while not stopped:
         expenses_name= str(input("spended for(type 0 to stop): "))
         enter_expenses = int(input("Enter a expenses: "))
-        if enter_expenses==0:
+        if expenses_name==0:
             stopped = True
         else:
             writer.writerow([df,expenses_name, enter_expenses])
