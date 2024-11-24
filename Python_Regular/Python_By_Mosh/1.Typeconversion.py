@@ -133,8 +133,6 @@ else:
     print("sorry your guess limit exceed! you failed to guess")
 
 #car game
-
-
 command = ""
 started = False
 while command != 'quit':
@@ -156,3 +154,81 @@ while command != 'quit':
     else:
         print("game over")
 print("close!")
+
+#for loop iterate each character in string
+for item in "python":    #string loop
+    print(item)
+for item in ["Mani", "Taj","upi"]:    #list loop
+    print(item)
+for item in range(10):    #range fun
+    print(item)
+for item in range(5,10,2):
+    print(item)
+
+#list looping
+prices = [10,20,30]
+total = 0
+for i in prices:
+    total = total+i
+print(total)
+
+#nested loops to create x and y axis:
+for x in range(5):          #1st iteration 0
+    for y in range(5):      #1st iteration 0 and print(0,0)and then next iteration 1 and then print (0,1),(0,2)(0,3)(0,4) then moves to 1st x axis again
+        print(f"{x},{y}")   #2nd nested x axis 1 and then 1st iteration of y (1,0)(1,1)(1,2)(1,3)(1,4)
+                            
+#nested problm
+for x in range(4):
+    for y in range(2):
+        for z in range(1):
+            print(f"{x}{y}{z}")
+
+#nested loop problem
+numbers = [5,2,2,5]
+for i in numbers:
+    output =""
+    for z in range(i):
+        output += 'x'
+    print(output)
+
+#lists
+names = ["mahi","mani","taj","kissan"]
+print(names[0])
+print(names[-1])
+
+#largest number in list
+numbers = [10,2,5,38]
+max_num = numbers[0]
+for i in numbers:
+    if i > max_num:
+        max_num = i
+        print(max_num)
+
+#2D matrix                  outer squarebarckets and inide that another brackets
+matrix = [
+    [1,3,5],
+    [2,4,7],
+    [3,7,9]
+]
+print(matrix[0][1])
+matrix[0][2]=2
+print(matrix[0][2])
+
+#2d print using loop
+matrix = [
+    [1,3,5],
+    [2,4,7],
+    [3,7,9]
+]
+for i in matrix:
+    for j in i:
+        print(j)
+
+#list methods/functions
+numbers =  [2,5,2,7,8]
+numbers.append(10)  #add at last
+numbers.insert(0,20) #insert at specific positin
+numbers.remove(5)  #remove at any index
+#numbers.clear()   #remove all
+numbers.pop()  #remve last item
+print(numbers)
