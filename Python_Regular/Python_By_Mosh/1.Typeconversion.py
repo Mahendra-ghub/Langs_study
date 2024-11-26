@@ -231,4 +231,28 @@ numbers.insert(0,20) #insert at specific positin
 numbers.remove(5)  #remove at any index
 #numbers.clear()   #remove all
 numbers.pop()  #remve last item
+print(10 in numbers)
+print(numbers.count(5))
+numbers.sort()  #sort numbers
+numbers.reverse() #reverse numbers
+number2= numbers.copy() #copy of original list
 print(numbers)
+print(number2)
+
+#remove duplicates in  list
+numbers = [2,3,5,2,6,7,6]
+unique = []
+for i in numbers:
+    if i not in unique:
+        unique.append(i)
+print(unique)
+
+#tuples ordered unchangable allow duplicates
+numbers = (1,2,3,4)
+numbers.index(1)       #index,count is available in list
+print(numbers)
+
+#unpacked numbers
+coordinates = (1,4,5,6)
+x,y,z,w = coordinates
+print(x,y,z,w)

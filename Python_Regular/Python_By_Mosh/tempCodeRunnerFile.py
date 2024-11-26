@@ -1,4 +1,3 @@
-numbers =  [2,5,2,7,8]
-numbers.append(10)  #add at last
-numbers.insert(0,20)
-print(numbers)
+coordinates = (1,4,5,6)
+x,y,z,w = coordinates
+print(x,y,z,w)
